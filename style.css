@@ -1,0 +1,38 @@
+html {
+    width: 100%;
+    margin: 0;
+    background-color: #27274b;
+    color: #f5f6f7;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+h1,
+h2,
+p {
+    text-align: center;
+}
+
+h1 {
+    color: #8d87ec;
+    font-size: 3rem;
+}
+
+h2 {
+    color: #7c75de;
+    font-size: 2rem;
+}
+
+a {
+    color: #7c75de;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #b4b4b4;
+}
+
+.template-logo {
+    display: block;
+    margin: 0 auto;
+}
