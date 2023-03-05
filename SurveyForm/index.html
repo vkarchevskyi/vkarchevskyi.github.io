@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+</head>
+
+<body>
+    <h1 id="title">Job Application Form</h1>
+    <p id="description">Please Fill Out the Form Below to Submit Your Job Application!</p>
+    <form action="" id="survey-form">
+        <fieldset>
+            <legend>Contacts</legend>
+            <label class="name">
+                Name:
+                <input type="text" name="first-name" id="first-name" placeholder="First Name" class="first-name"
+                    required />
+                <input type="text" name="second-name" id="second-name" placeholder="Second Name" class="second-name"
+                    required />
+            </label>
+            <label for="email" id="email-label">Email: <input type="email" name="email" id="email" placeholder="Email"
+                    required /></label>
+            <input id="phone" type="tel" name="phone" />
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Position</legend>
+            <select name="dropdown" id="dropdown">
+                <option value="1">Front end (React)</option>
+                <option value="2">Front end (VueJS)</option>
+                <option value="3">Front end (Angular)</option>
+                <option value="4">PHP</option>
+                <option value="5">Java</option>
+                <option value="6">NodeJS</option>
+                <option value="7">.NET (C#)</option>
+                <option value="8">Ruby on Rails</option>
+                <option value="9">C++</option>
+                <option value="10">C Embedded</option>
+            </select>
+            <input type="radio" name="position" id="trainee" value="sd">
+            <label for="trainee">Trainee</label>
+            <input type="radio" name="position" id="junior" value="sd">
+            <label for="junior">Junior</label>
+            <input type="radio" name="position" id="middle" value="sd">
+            <label for="middle">Middle</label>
+            <input type="radio" name="position" id="senior" value="sd">
+            <label for="senior">Senior</label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Preferred work place</legend>
+            <input type="checkbox" name="office" id="office" value="office">
+            <label for="office">Office</label>
+            <input type="checkbox" name="remote" id="remote" value="remote">
+            <label for="remote">Remote</label>
+        </fieldset>
+        <br>
+        <label for="photo" class="photo-button">Choose your photo</label>
+        <input type="file" name="photo" id="photo" class="hidden">
+        <textarea name="textarea" id="textarea" cols="30" rows="5"
+            placeholder="Add additional information about yourself..."></textarea>
+        <input type="submit" value="Submit" id="submit">
+    </form>
+</body>
+<script>
+    const phoneInputField = document.querySelector("#phone");
+    const phoneInput = window.intlTelInput(phoneInputField, {
+        utilsScript:
+            "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+    });
+</script>
+
+</html>
