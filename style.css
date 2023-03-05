@@ -1,10 +1,10 @@
 html {
     width: 100%;
     margin: 0;
-    background-color: #27274b;
+    background-color: rgb(43, 42, 51);
     color: #f5f6f7;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 16px;
+    font-size: 1.4rem;
 }
 
 h1,
@@ -14,22 +14,23 @@ p {
 }
 
 h1 {
-    color: #8d87ec;
-    font-size: 3rem;
+    color: #ACA7CC;
+    font-size: 2.5rem;
 }
 
 h2 {
-    color: #7c75de;
+    color: #ACA7CC;
+    font-weight: 500;
     font-size: 2rem;
 }
 
 a {
-    color: #7c75de;
+    color: #ACA7CC;
     text-decoration: none;
 }
 
 a:hover {
-    color: #b4b4b4;
+    color: #6B6980;
 }
 
 .template-logo {
