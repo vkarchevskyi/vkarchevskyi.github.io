@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrainLuck Interpriter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <form action="">
+            <textarea name="code" id="code" cols="30" rows="7"></textarea>
+            <div class="input-area">
+                <label for="input-text">Input: <input type="text" name="input_text" id="input_text" /></label>
+                <div class="button-wrapper">
+                    <input type="button" id="clear" value="Clear" onclick="clearCode()">
+                    <input type="button" id="execute" value="Execute" onclick="brainLuck(code.value, input_text.value)">
+                </div>
+            </div>
+            <textarea name="output" id="output" cols="30" rows="7"></textarea>
+        </form>
+
+        <table>
+            <tr>
+                <th>Character</th>
+                <th>C equivalent</th>
+                <th>Meaning</th>
+            </tr>
+            <tr>
+                <td>(Program Start)</td>
+                <td>char array[10000] = {0}; char *ptr = array;</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>&#62;</td>
+                <td>++ptr;</td>
+                <td>Increment the data pointer.</td>
+            </tr>
+            <tr>
+                <td>&#60;</td>
+                <td>--ptr;</td>
+                <td> Decrement the data pointer.</td>
+            </tr>
+            <tr>
+                <td>+</td>
+                <td>++*ptr;</td>
+                <td> Increment the byte at the data pointer.</td>
+            </tr>
+            <tr>
+                <td>-</td>
+                <td>--*ptr;</td>
+                <td> Decrement the byte at the data pointer.</td>
+            </tr>
+            <tr>
+                <td>.</td>
+                <td>putchar(*ptr);</td>
+                <td> Output the byte at the data pointer.</td>
+            </tr>
+            <tr>
+                <td>,</td>
+                <td>*ptr = getchar();</td>
+                <td> Accept one byte of input, storing its value in the byte at the data pointer.</td>
+            </tr>
+            <tr>
+                <td>[</td>
+                <td>while (*ptr) {</td>
+                <td> If the byte at the data pointer is zero, then instead of moving the instruction pointer forward to
+                    the
+                    next command, jump it forward to the command after the matching ] command.</td>
+            </tr>
+            <tr>
+                <td>]</td>
+                <td>}</td>
+                <td> If the byte at the data pointer is nonzero, then instead of moving the instruction pointer forward
+                    to
+                    the next command, jump it back to the command after the matching [ command. </td>
+            </tr>
+        </table>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
