@@ -12,7 +12,7 @@
 <body>
     <div class="wrapper">
         <form action="">
-            <textarea name="code" id="code" cols="30" rows="7"></textarea>
+            <textarea name="code" id="code" cols="30" rows="7" placeholder="Write your brainfuck code"></textarea>
             <div class="input-area">
                 <label for="input-text">Input: <input type="text" name="input_text" id="input_text" /></label>
                 <div class="button-wrapper">
@@ -20,7 +20,7 @@
                     <input type="button" id="execute" value="Execute" onclick="brainLuck(code.value, input_text.value)">
                 </div>
             </div>
-            <textarea name="output" id="output" cols="30" rows="7"></textarea>
+            <textarea name="output" id="output" cols="30" rows="7" placeholder="And get a response"></textarea>
         </form>
 
         <table>
