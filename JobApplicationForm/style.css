@@ -1,7 +1,5 @@
 body {
     margin: 0 auto;
-    width: 95%;
-    min-width: 35em;
     box-sizing: border-box;
     text-align: center;
     font-size: 1.2rem;
@@ -54,11 +52,11 @@ textarea {
 }
 
 .first-name {
-    width: 37%;
+    width: 45%;
 }
 
 .second-name {
-    width: calc(48% - 2px);
+    width: 55%;
 }
 
 .name {
@@ -73,4 +71,51 @@ textarea {
 
 .photo-button {
     font-weight: 900;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 650px) {
+    html {
+        /* font-size: 1rem; */
+    }
+
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .first-name {
+        width: 100%;
+    }
+
+    .second-name {
+        width: 100%;
+    }
+
+    #email {
+        width: 100%;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+        margin: 0 0 1rem 0;
+    }
+
+    #dropdown {
+        display: block;
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    textarea {
+        width: 95%;
+    }
+
+    #submit {
+        font-size: 1.4rem;
+        padding: 0.4rem 1rem;
+    }
 }

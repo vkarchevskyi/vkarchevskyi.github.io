@@ -18,15 +18,19 @@
         <fieldset>
             <legend>Contacts</legend>
             <label class="name">
-                Name:
-                <input type="text" name="first-name" id="first-name" placeholder="First Name" class="first-name"
-                    required />
-                <input type="text" name="second-name" id="second-name" placeholder="Second Name" class="second-name"
-                    required />
+                <div class="wrapper">
+                    <input type="text" name="first-name" id="first-name" placeholder="First Name" class="first-name"
+                        required />
+                    <input type="text" name="second-name" id="second-name" placeholder="Second Name" class="second-name"
+                        required />
+                </div>
             </label>
-            <label for="email" id="email-label">Email: <input type="email" name="email" id="email" placeholder="Email"
-                    required /></label>
-            <input id="phone" type="tel" name="phone" />
+            <div class="wrapper">
+                <label for="email" id="email-label"><input type="email" name="email" id="email" placeholder="Email"
+                        required /></label>
+                <input id="phone" type="tel" name="phone" />
+            </div>
+
         </fieldset>
         <br>
 
