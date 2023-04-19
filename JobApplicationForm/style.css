@@ -79,10 +79,6 @@ textarea {
 }
 
 @media screen and (max-width: 650px) {
-    html {
-        /* font-size: 1rem; */
-    }
-
     .wrapper {
         flex-direction: column;
     }
