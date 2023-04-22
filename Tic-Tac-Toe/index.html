@@ -30,8 +30,22 @@
         </table>
 
         <div class="panel">
-            <input type="button" value="Restart" onclick="restart()">
-            <h3 id="winner"></h3>
+            <h2>Player 1</h2>
+            <select name="player-1" id="player-1">
+                <option value="User">User</option>
+                <option value="AIeasy">AI Easy</option>
+                <option value="AImedium">AI Medium</option>
+                <option value="AIhard">AI Hard</option>
+            </select>
+            <h2>Player 2</h2>
+            <select name="player-2" id="player-2">
+                <option value="User">User</option>
+                <option value="AIeasy">AI Easy</option>
+                <option value="AImedium">AI Medium</option>
+                <option value="AIhard">AI Hard</option>
+            </select>
+            <input type="button" value="Start" onclick="startGame()">
+            <h2 id="winner"></h2>
         </div>
     </div>
 
