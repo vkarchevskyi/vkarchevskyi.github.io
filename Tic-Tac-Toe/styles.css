@@ -1,0 +1,50 @@
+td {
+    text-align: center;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}
+
+.square {
+    background-color: #eeeeee;
+    width: 200px;
+    height: 200px;
+    color: orangered;
+    font-size: 20px;
+}
+
+.black {
+    background-color: #222222;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 700px) {
+    .square {
+        width: 150px;
+        height: 150px;
+    }
+
+    img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .square {
+        width: 100px;
+        height: 100px;
+    }
+
+    img {
+        width: 80px;
+        height: 80px;
+    }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <table>
+            <tr>
+                <td id="0" class="square" onclick="getMove(0)"></td>
+                <td id="1" class="square" onclick="getMove(1)"></td>
+                <td id="2" class="square" onclick="getMove(2)"></td>
+            </tr>
+            <tr>
+                <td id="3" class="square" onclick="getMove(3)"></td>
+                <td id="4" class="square" onclick="getMove(4)"></td>
+                <td id="5" class="square" onclick="getMove(5)"></td>
+            </tr>
+            <tr>
+                <td id="6" class="square" onclick="getMove(6)"></td>
+                <td id="7" class="square" onclick="getMove(7)"></td>
+                <td id="8" class="square" onclick="getMove(8)"></td>
+            </tr>
+        </table>
+
+        <div class="panel">
+            <input type="button" value="Restart" onclick="restart()">
+            <h3 id="winner"></h3>
+        </div>
+    </div>
+
+</body>
+<script src="./game.js"></script>
+
+</html>
