@@ -194,7 +194,8 @@ function getMove(id, isUser) {
 
     if (isUser) {
         if (currentMove % 2 == 1 && player1 == 'User' ||
-            currentMove % 2 == 0 && player2 == 'User') {
+            currentMove % 2 == 0 && player2 == 'User' ||
+            player1 != 'User' && player2 != 'User') {
             return
         }
     }
