@@ -187,10 +187,17 @@ class AIhard extends AImedium {
     }
 }
 
-function getMove(id) {
+function getMove(id, isUser) {
     const cell = document.getElementById(id);
 
     if (!isStart || cell.innerHTML != '') return;
+
+    if (isUser) {
+        if (currentMove % 2 == 1 && player1 == 'User' ||
+            currentMove % 2 == 0 && player2 == 'User') {
+            return
+        }
+    }
 
     cell.innerHTML = currentMove % 2 == 0 ? cross : circle;
 
