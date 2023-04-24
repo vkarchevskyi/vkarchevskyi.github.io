@@ -1,3 +1,12 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
 td {
     text-align: center;
 }
@@ -7,16 +16,29 @@ img {
     height: 150px;
 }
 
+table {
+    background-color: #000;
+    margin-right: 20px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+select {
+    font-size: 1.6rem;
+}
+
+input {
+    margin-left: 10px;
+    font-size: 1.6rem;
+}
+
 .square {
     background-color: #eeeeee;
     width: 200px;
     height: 200px;
-    color: orangered;
-    font-size: 20px;
-}
-
-.black {
-    background-color: #222222;
 }
 
 .wrapper {
@@ -25,26 +47,29 @@ img {
     flex-wrap: wrap;
 }
 
-@media only screen and (max-width: 700px) {
-    .square {
-        width: 150px;
-        height: 150px;
+@media only screen and (max-width: 900px) {
+    h2 {
+        display: inline-block;
+        margin: 5px;
     }
 
-    img {
-        width: 120px;
-        height: 120px;
+    table {
+        margin: 0 2px;
     }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 670px) {
+    table {
+        width: 100%;
+    }
+
     .square {
-        width: 100px;
-        height: 100px;
+        width: 32vw;
+        height: 32vw;
     }
 
     img {
-        width: 80px;
-        height: 80px;
+        width: 25vw;
+        height: 25vw;
     }
 }
