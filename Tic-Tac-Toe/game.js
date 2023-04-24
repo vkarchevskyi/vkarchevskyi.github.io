@@ -49,7 +49,7 @@ class AIeasy {
     makeMove() {
         const freeCells = board.getFreeCells();
         const randomId = Math.floor(Math.random() * freeCells.length);
-        getMove(freeCells[randomId]);
+        makeMove(freeCells[randomId]);
     }
 }
 
@@ -82,14 +82,14 @@ class AImedium extends AIeasy {
 
         const winPos = findPos(this._char);
         if (winPos !== undefined) {
-            getMove(winPos);
+            makeMove(winPos);
             return;
         }
 
         // search the move to prevent a loss
         const losePos = findPos(this._enemyChar);
         if (losePos !== undefined) {
-            getMove(losePos);
+            makeMove(losePos);
             return;
         }
 
@@ -183,20 +183,20 @@ class AIhard extends AImedium {
      * */
     makeMove() {
         const bestMove = this.findBestMove(board.getBoard());
-        getMove(bestMove);
+        makeMove(bestMove);
     }
 }
 
-function getMove(id, isUser) {
+function makeMove(id, isUser) {
     const cell = document.getElementById(id);
 
     if (!isStart || cell.innerHTML != '') return;
 
-    if (isUser) {
-        if (currentMove % 2 == 1 && player1 == 'User' ||
-            currentMove % 2 == 0 && player2 == 'User' ||
+    if (isUser && (player1 != 'User' || player2 != 'User')) {
+        if (player1 == 'User' && currentMove % 2 == 1 ||
+            player2 == 'User' && currentMove % 2 == 0 ||
             player1 != 'User' && player2 != 'User') {
-            return
+            return;
         }
     }
 
@@ -276,7 +276,6 @@ function startGame() {
 const circle = '<img src="circle.svg" alt="O">';
 const cross = '<img src="cross.svg" alt="X">';
 let isStart = false;
-let isBotMove = false;
 let board;
 let currentMove;
 let player1;

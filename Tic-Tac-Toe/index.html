@@ -13,19 +13,19 @@
     <div class="wrapper">
         <table>
             <tr>
-                <td id="0" class="square" onclick="getMove(0, true)"></td>
-                <td id="1" class="square" onclick="getMove(1, true)"></td>
-                <td id="2" class="square" onclick="getMove(2, true)"></td>
+                <td id="0" class="square" onclick="makeMove(0, true)"></td>
+                <td id="1" class="square" onclick="makeMove(1, true)"></td>
+                <td id="2" class="square" onclick="makeMove(2, true)"></td>
             </tr>
             <tr>
-                <td id="3" class="square" onclick="getMove(3, true)"></td>
-                <td id="4" class="square" onclick="getMove(4, true)"></td>
-                <td id="5" class="square" onclick="getMove(5, true)"></td>
+                <td id="3" class="square" onclick="makeMove(3, true)"></td>
+                <td id="4" class="square" onclick="makeMove(4, true)"></td>
+                <td id="5" class="square" onclick="makeMove(5, true)"></td>
             </tr>
             <tr>
-                <td id="6" class="square" onclick="getMove(6, true)"></td>
-                <td id="7" class="square" onclick="getMove(7, true)"></td>
-                <td id="8" class="square" onclick="getMove(8, true)"></td>
+                <td id="6" class="square" onclick="makeMove(6, true)"></td>
+                <td id="7" class="square" onclick="makeMove(7, true)"></td>
+                <td id="8" class="square" onclick="makeMove(8, true)"></td>
             </tr>
         </table>
 
@@ -37,6 +37,7 @@
                 <option value="AImedium">AI Medium</option>
                 <option value="AIhard">AI Hard</option>
             </select>
+            <br>
             <h2>Player 2</h2>
             <select name="player-2" id="player-2">
                 <option value="User">User</option>
