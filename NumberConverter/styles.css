@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+label,
+input {
+    font-size: 2.4rem;
+}
+
+input[type="text"] {
+    width: 350px;
+    font-size: 2.4rem;
+}
+
+label,
+input[type="button"] {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+}
+
+@media only screen and (max-width: 550px) {
+    input[type="text"] {
+        width: 100%;
+    }
+}
