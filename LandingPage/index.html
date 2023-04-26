@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header id="header">
+        <a href=""><img src="img/logo.png" alt="" id="header-img" width="64px"></a>
+        <nav id="nav-bar">
+            <a href="#user-registration" class="nav-link">Замовлення</a>
+            <a href="#about-us" class="nav-link">Про нас</a>
+            <a href="#pricing" class="nav-link">Ціни</a>
+        </nav>
+    </header>
+    <div class="wrapper">
+        <section id="user-registration">
+            <p class="bold">Введіть свой номер телефону, щоб зробити замовлення</p>
+            <form action="" id="form">
+                <input type="tel" name="tel" id="tel" placeholder="+380" value="+380">
+                <!-- <input type="email" name="email" id="email" placeholder="Email"> -->
+                <input type="submit" value="Передзвоніть мені" id="submit">
+            </form>
+        </section>
+        <section id="about-us">
+            <p class="bold">Контакти для зворотнього зв'язку: </p>
+            <div id="owner__phone">
+                <a href="tel:+38012345678"><img src="img/phone.svg" alt="" width="24px"><span>+38012345678</span></a>
+            </div>
+            <div id="owner__email">
+                <a href="mailto:vkarchevskyi10@gmail.com"><img src="img/mail.svg" alt=""
+                        width="24px"><span>vkarchevskyi10@gmail.com</span></a>
+            </div>
+            <br />
+            <iframe src="https://www.youtube-nocookie.com/embed/Q-k10B53XS0" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </section>
+        <section id="pricing">
+            <div class="tier">
+                <h3 class="tier__name">Сет Королівський</h3>
+                <div class="content">
+                    <img src="img/royal-set.jpeg" alt="royal-set">
+                    <h4 class="price">1790 UAH</h4>
+                    <p class="weight">1800г</p>
+                    <p class="description">Рол Каліфорнія унагі, рол 4 сира, рол Тигровий дракон, рол Філадельфія Extra,
+                        рол Бриз, Тобіко рол, рол Тайфун з вугрем, рол Червоний дракон</p>
+                    <input type="button" name="card-button1" id="card-button1" class="card-button"
+                        value="Додати в кошик">
+                </div>
+            </div>
+            <div class="tier">
+                <h3 class="tier__name">Сет Філадельфія XL</h3>
+                <div class="content">
+                    <img src="img/philadelphiya-xl.jpeg" alt="philadelphiya">
+                    <h4 class="price">1090 UAH</h4>
+                    <p class="weight">1200г</p>
+                    <p class="description">Рол Філадельфія з тунцем XL, рол Філадельфія з креветкою XL, рол Філадельфія
+                        з лососем XL, рол Філадалефія з копченим лососем XL</p>
+                    <input type="button" name="card-button2" id="card-button2" class="card-button"
+                        value="Додати в кошик">
+                </div>
+            </div>
+            <div class="tier">
+                <h3 class="tier__name">Сет Цікавий</h3>
+                <div class="content">
+                    <img src="img/interesting-set.jpeg" alt="interesting-set">
+                    <h4 class="price">735 UAH</h4>
+                    <p class="weight">970г</p>
+                    <p class="description">Чіз-рол з мідіями, Філадельфія з копченим лососем, Боніто з лососем, рол
+                        Бриз.</p>
+                    <input type="button" name="card-button3" id="card-button3" class="card-button"
+                        value="Додати в кошик">
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer id="footer">
+        Copyright 2023, Suchi-bar.
+    </footer>
+</body>
+
+</html>
