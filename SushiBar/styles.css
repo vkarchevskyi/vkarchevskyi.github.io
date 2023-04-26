@@ -192,4 +192,13 @@ iframe {
         width: 300px;
         height: 169px;
     }
+
+    .nav-link {
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+
+    #tel {
+        margin: 10px auto;
+    }
 }
