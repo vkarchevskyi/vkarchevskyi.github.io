@@ -7,37 +7,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My site</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <h1>Welcome!</h1>
-    <div class="flex">
-        <div class="column">
-            <h2>Templates:</h2>
-            <div id="logo"><a href="templates/Nerdify/" target="_blank"></a></div>
-        </div>
-        <div class="column">
-            <h2>Projects:</h2>
-            <p><a href="/projects/JobApplicationForm/" target="_blank">Job Application Form</a></p>
-            <p><a href="/projects/BrainLuckinterpreter/" target="_blank">Brain_uck interpreter</a></p>
-            <p><a href="/projects/TributePages/LinusTorvalds/" target="_blank">Linus Torvalds Tribute Page</a></p>
-            <p><a href="/projects/TechnicalDocumentation/" target="_blank">TypeScript Documentation</a></p>
-            <p><a href="/projects/Tic-Tac-Toe/" target="_blank">Tic-Tac-Toe</a></p>
-            <p><a href="/projects/NumberConverter/" target="_blank">Number Base Converter</a></p>
-            <p><a href="/projects/SushiBar/" target="_blank">Sushi Bar</a></p>
-        </div>
-        <div class="column">
-            <h2>Games: </h2>
-            <p>Ludum Dare 51: </p>
-            <p><a href="https://lollytweek.itch.io/gamejam-game" target="_blank" rel="noopener noreferrer">Portal to the
-                    right world</a></p>
-            <p>Global Game Jam 2023: </p>
-            <p><a href="https://lollytweek.itch.io/cats-roots" target="_blank" rel="noopener noreferrer">Cats roots</a>
-            </p>
-            <p>Ludum Dare 53: </p>
-            <p><a href="https://lollytweek.itch.io/delivery-drive/" target="_blank" rel="noopener noreferrer">Delivery
-                    Drive</a></p>
-        </div>
+    <!-- 
+        Link to template 
+        https://www.figma.com/file/KL2mOwgmG4dBdTYmvDScGR/Portfolio-(Community)
+    -->
+    <div class="wrapper">
+        <header>
+            <nav id="navbar">
+                <img src="img/logo.png" alt="logo" class="navbar__logo" width="96">
+                <div class="navbar__links">
+                    <a href="#home">Home</a>
+                    <a href="#work">Work</a>
+                    <a href="#about-me">About</a>
+                </div>
+            </nav>
+        </header>
+        <div id="home"></div>
+        <main>
+            <h1 class="light-text">I’m a <b>frontend developer</b></h1>
+            <h2 class="light-text" id="work">Selected <b>Works</b></h2>
+            <div id="works">
+                <div class="work-wrapper">
+                    <img src="img/app1.png" alt="app1" width="594">
+                    <div class="work__description">
+                        <h6>Real estate Template</h6>
+                        <p class="main-description light-text">
+                            Lorem ipsum dolor sit amet, consectetur
+                            <b>adipiscing elit. Ultrices lorem non feugiat egestas amet.</b>
+                        </p>
+                        <p class="work-type">Website Design</p>
+                        <a href="#" class="btn">
+                            View work
+                            <img src="img/navigate-right.png" alt=">" width="24">
+                        </a>
+                    </div>
+                </div>
+                <div class="work-wrapper">
+                    <img src="img/app2.png" alt="app2" width="594">
+                    <div class="work__description">
+                        <h6>Plant identification app</h6>
+                        <p class="main-description light-text">
+                            Lorem ipsum dolor sit amet, consectetur
+                            <b>adipiscing elit. Ultrices lorem non feugiat egestas amet.</b>
+                        </p>
+                        <p class="work-type">Mobile App</p>
+                        <a href="#" class="btn">
+                            View work
+                            <img src="img/navigate-right.png" alt=">" width="24">
+                        </a>
+                    </div>
+                </div>
+                <div class="work-wrapper">
+                    <img src="img/app3.png" alt="app3" width="594">
+                    <div class="work__description">
+                        <h6>Smart Home App</h6>
+                        <p class="main-description light-text">
+                            Lorem ipsum dolor sit amet, consectetur
+                            <b>adipiscing elit. Ultrices lorem non feugiat egestas amet.</b>
+                        </p>
+                        <p class="work-type">Mobile App</p>
+                        <a href="#" class="btn">
+                            View work
+                            <img src="img/navigate-right.png" alt=">" width="24">
+                        </a>
+                    </div>
+                </div>
+                <div class="work-wrapper">
+                    <img src="img/app4.png" alt="app4" width="594">
+                    <div class="work__description">
+                        <h6>Logo Animation</h6>
+                        <p class="main-description light-text">
+                            Lorem ipsum dolor sit amet, consectetur
+                            <b>adipiscing elit. Ultrices lorem non feugiat egestas amet.</b>
+                        </p>
+                        <p class="work-type">Animation</p>
+                        <a href="#" class="btn">
+                            View work
+                            <img src="img/navigate-right.png" alt=">" width="24">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="about-me">
+                <div class="about-me__description">
+                    <h3>A bit about me</h3>
+                    <p class="main-description light-text">
+                        I am a UI/UX designer who is passionate about creating
+                        <b>beautiful and joyful digital experiences. Besides design, I love music, games and
+                            travelling.</b>
+                    </p>
+                </div>
+                <div class="about-me__gallery">
+                    <img src="./img/About-me1.png" alt="mypic1">
+                    <img src="./img/About-me2.png" alt="mypic2">
+                    <img src="./img/About-me3.png" alt="mypic3">
+                </div>
+            </div>
+            <div id="contacts">
+                <h2 class="light-text">Get <b>in Touch.</b></h2>
+                <h6>So that we can talk more about...</h6>
+                <div class="icons">
+                    <a href="https://github.com/vkarchevskyi/"><img src="./img/Github.png" alt="Github" width="30"></a>
+                    <a href="https://t.me/volodymyr_k_ua"><img src="./img/telegram.png" alt="Telegram" width="30"></a>
+                    <a href="https://www.linkedin.com/in/volodymyr-karchevskyi-880561269/"><img src="./img/LinkedIn.png"
+                            alt="LinkedIn"></a>
+                    <a href="mailto:vkarchevskyi10@gmail.com"><img src="./img/Mail.png" alt="Mail"></a>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>Made with 💜 by <b>Volodymyr Karchevskyi</b></p>
+        </footer>
     </div>
 </body>
 
