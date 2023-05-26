@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- 
+        Link to template 
+        https://www.figma.com/file/KL2mOwgmG4dBdTYmvDScGR/Portfolio-(Community)
+    -->
+    <div class="wrapper">
+        <header>
+            <nav id="navbar">
+                <img src="img/logo.png" alt="logo" class="navbar__logo" width="96">
+                <div class="navbar__links">
+                    <a href="#home">Home</a>
+                    <a href="#work">Work</a>
+                    <a href="#about-me">About</a>
+                </div>
+            </nav>
+        </header>
+        <div id="home"></div>
+        <main>
+            <h1 class="light-text">I’m a <b>frontend developer</b></h1>
+            <h2 class="light-text" id="work">Selected <b>Works</b></h2>
+            <div id="works">
+                <div class="work-wrapper">
+                    <img src="img/app1.png" alt="app1" width="594">
+                    <div class="work__description">
+                        <h6>Real estate Template</h6>
+                        <p class="main-description light-text">
+                            Lorem ipsum dolor sit amet, consectetur
+                            <b>adipiscing elit. Ultrices lorem non feugiat egestas amet.</b>
+                        </p>
+                        <p class="work-type">Website Design</p>
+                        <a href="#" class="btn" onmouseover="hover(this);" onmouseout="unhover(this);">
+                            View work
+                            <img src=" ./img/navigate-right.png" alt=">" width="24">
+                        </a>
+                    </div>
+                </div>
+                <div class=" work-wrapper">
+                    <img src="img/app2.png" alt="app2" width="594">
+                    <div class="work__description">
+                        <h6>Plant identification app</h6>
+                        <p class="main-description light-text">
+                            Lorem ipsum dolor sit amet, consectetur
+                            <b>adipiscing elit. Ultrices lorem non feugiat egestas amet.</b>
+                        </p>
+                        <p class="work-type">Mobile App</p>
+                        <a href="#" class="btn" onmouseover="hover(this);" onmouseout="unhover(this);">
+                            View work
+                            <img src=" ./img/navigate-right.png" alt=">" width="24">
+                        </a>
+                    </div>
+                </div>
+                <div class="work-wrapper">
+                    <img src="img/app3.png" alt="app3" width="594">
+                    <div class="work__description">
+                        <h6>Smart Home App</h6>
+                        <p class="main-description light-text">
+                            Lorem ipsum dolor sit amet, consectetur
+                            <b>adipiscing elit. Ultrices lorem non feugiat egestas amet.</b>
+                        </p>
+                        <p class="work-type">Mobile App</p>
+                        <a href="#" class="btn" onmouseover="hover(this);" onmouseout="unhover(this);">
+                            View work
+                            <img src=" ./img/navigate-right.png" alt=">" width="24">
+                        </a>
+                    </div>
+                </div>
+                <div class=" work-wrapper">
+                    <img src="img/app4.png" alt="app4" width="594">
+                    <div class="work__description">
+                        <h6>Logo Animation</h6>
+                        <p class="main-description light-text">
+                            Lorem ipsum dolor sit amet, consectetur
+                            <b>adipiscing elit. Ultrices lorem non feugiat egestas amet.</b>
+                        </p>
+                        <p class="work-type">Animation</p>
+                        <a href="#" class="btn" onmouseover="hover(this);" onmouseout="unhover(this);">
+                            View work
+                            <img src=" ./img/navigate-right.png" alt=">" width="24">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="about-me">
+                <div class="about-me__description">
+                    <h3>A bit about me</h3>
+                    <p class="main-description light-text">
+                        I am a UI/UX designer who is passionate about creating
+                        <b>beautiful and joyful digital experiences. Besides design, I love music, games and
+                            travelling.</b>
+                    </p>
+                </div>
+                <div class="about-me__gallery">
+                    <img src="./img/About-me1.png" alt="mypic1">
+                    <img src="./img/About-me2.png" alt="mypic2">
+                    <img src="./img/About-me3.png" alt="mypic3">
+                </div>
+            </div>
+            <div id="contacts">
+                <h2 class="light-text">Get <b>in Touch.</b></h2>
+                <h6>So that we can talk more about...</h6>
+                <div class="icons">
+                    <a href="https://github.com/vkarchevskyi/"><img src="./img/Github.png" alt="Github" width="30"></a>
+                    <a href="https://t.me/volodymyr_k_ua"><img src="./img/telegram.png" alt="Telegram" width="30"></a>
+                    <a href="https://www.linkedin.com/in/volodymyr-karchevskyi-880561269/"><img src="./img/LinkedIn.png"
+                            alt="LinkedIn"></a>
+                    <a href="mailto:vkarchevskyi10@gmail.com"><img src="./img/Mail.png" alt="Mail"></a>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>Made with 💜 by <b>Volodymyr Karchevskyi</b></p>
+        </footer>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
