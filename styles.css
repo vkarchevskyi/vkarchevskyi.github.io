@@ -19,6 +19,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -136,7 +137,7 @@ header {
 }
 
 .title {
-    padding: 38.7rem 0 20.5rem;
+    padding: 20.5rem 0;
     text-align: center;
     display: flex;
     justify-content: center;
