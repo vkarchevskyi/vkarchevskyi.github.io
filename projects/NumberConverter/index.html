@@ -10,20 +10,20 @@
 </head>
 
 <body>
+    <h1>Number Converter</h1>
     <form action="">
-        <label for="source_base">Source base: <input type="number" name="source_base" id="source_base" min="2" max="36"
+        <label for="source_base">Source base: <input type="text" name="source_base" id="source_base" min="2" max="36"
                 placeholder="2-36" /></label>
-        <label for="target_base">Target base: <input type="number" name="target_base" id="target_base" min="2" max="36"
+        <label for="target_base">Target base: <input type="text" name="target_base" id="target_base" min="2" max="36"
                 placeholder="2-36" /></label>
         <label for="source">Source number: <input type="text" name="source" id="source" /></label>
-        <label for="target">Target number: <input type="text" name="target" id="target"
-                placeholder="Press 'Convert' to get a result" /></label>
+        <label for="target">Target number: <input type="text" name="target" id="target" placeholder="" /></label>
         <input type="button" value="Convert" onclick="convert(source.value, source_base.value, target_base.value)">
     </form>
     <script>
         function convert(sourceNum, sourceBase, targetBase) {
             let decimal = parseInt(sourceNum, sourceBase);
-            let target = decimal.toString(targetBase);
+            let target = decimal.toString(targetBase).toUpperCase();
             document.getElementById('target').value = target;
         }
     </script>
