@@ -246,10 +246,20 @@ header {
 }
 
 .cards {
-    width: 92rem;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 5rem;
+    column-gap: 5rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.card:nth-child(2n) {
+    justify-self: flex-start;
+}
+
+.card:nth-child(2n-1) {
+    justify-self: flex-end;
 }
 
 .cards:last-child {
@@ -262,6 +272,11 @@ header {
     padding: 2.5rem;
     border-radius: 10px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card__logo {
+    width: 6rem;
+    height: 6rem;
 }
 
 #experience h4 {
@@ -333,4 +348,17 @@ header {
 
 .links a:last-child {
     margin-right: 0;
+}
+
+.hidden-animation {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 0.5s;
+}
+
+.show-animation {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
 }

@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="app.js"></script>
 </head>
 
 <body>
@@ -56,25 +57,17 @@
                             </div>
                             <div class="about-me__flex-wrapper">
                                 <p>Location:</p>
-                                <p>Kropyvnytskyi, Ukraine</p>
-                            </div>
-                            <div class="about-me__flex-wrapper">
-                                <p>Age:</p>
-                                <p>18</p>
+                                <p>Ukraine</p>
                             </div>
                         </div>
                         <div class="about-me__container">
                             <div class="about-me__flex-wrapper">
-                                <p>Nationality: </p>
-                                <p>Ukrainian</p>
+                                <p>Age:</p>
+                                <p>18</p>
                             </div>
                             <div class="about-me__flex-wrapper">
-                                <p>Education: </p>
-                                <p>Robert Elvorti ETI</p>
-                            </div>
-                            <div class="about-me__flex-wrapper">
-                                <p>Degree: </p>
-                                <p>Bachelor (in 2026)</p>
+                                <p>Love:</p>
+                                <p>Cats</p>
                             </div>
                         </div>
                     </div>
@@ -95,70 +88,47 @@
                 </div>
             </div>
         </div>
-        <div id="experience">
-            <h2>Experience</h2>
-            <div class="cards">
-                <div class="card">
-                    <h4>Job Title</h4>
-                    <p class="card__name">Company Name / 2018-2022</p>
-                    <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit
-                        amet vestibulum felis.
-                        Vivamus facilisis ligula id fringilla gravida.</p>
-                </div>
-                <div class="card">
-                    <h4>Job Title</h4>
-                    <p class="card__name">Company Name / 2018-2022</p>
-                    <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit
-                        amet vestibulum felis.
-                        Vivamus facilisis ligula id fringilla gravida.</p>
-                </div>
-            </div>
-            <div class="cards">
-                <div class="card">
-                    <h4>Job Title</h4>
-                    <p class="card__name">Company Name / 2018-2022</p>
-                    <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit
-                        amet vestibulum felis.
-                        Vivamus facilisis ligula id fringilla gravida.</p>
-                </div>
-                <div class="card">
-                    <h4>Job Title</h4>
-                    <p class="card__name">Company Name / 2018-2022</p>
-                    <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit
-                        amet vestibulum felis.
-                        Vivamus facilisis ligula id fringilla gravida.</p>
-                </div>
-            </div>
-        </div>
         <div id="skills">
             <h2>Skills</h2>
             <div class="cards">
-                <div class="card">
-                    <img src="./img/skill-item-picture.png" alt="">
-                    <h4>Skill Names</h4>
+                <div class="card hidden-animation">
+                    <img src="./img/skills-icons/laravel.svg" alt="" class="card__logo">
+                    <h4>Laravel</h4>
                     <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit
                         amet
                         vestibulum felis. Vivamus facilisis ligula id fringilla gravida.</p>
                 </div>
-                <div class="card">
-                    <img src="./img/skill-item-picture.png" alt="">
-                    <h4>Skill Names</h4>
+                <div class="card hidden-animation">
+                    <img src="./img/skills-icons/symfony.svg" alt="" class="card__logo">
+                    <h4>Symfony</h4>
                     <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit
                         amet
                         vestibulum felis. Vivamus facilisis ligula id fringilla gravida.</p>
                 </div>
-            </div>
-            <div class="cards">
-                <div class="card">
-                    <img src="./img/skill-item-picture.png" alt="">
-                    <h4>Skill Names</h4>
+                <div class="card hidden-animation">
+                    <img src="./img/skills-icons/angular.svg" alt="" class="card__logo">
+                    <h4>Angular</h4>
                     <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit
                         amet
                         vestibulum felis. Vivamus facilisis ligula id fringilla gravida.</p>
                 </div>
-                <div class="card">
-                    <img src="./img/skill-item-picture.png" alt="">
-                    <h4>Skill Names</h4>
+                <div class="card hidden-animation">
+                    <img src="./img/skills-icons/livewire.svg" alt="" class="card__logo">
+                    <h4>Livewire</h4>
+                    <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit
+                        amet
+                        vestibulum felis. Vivamus facilisis ligula id fringilla gravida.</p>
+                </div>
+                <div class="card hidden-animation">
+                    <img src="./img/skills-icons/php-logo.svg" alt="" class="card__logo">
+                    <h4>PHP 8</h4>
+                    <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit
+                        amet
+                        vestibulum felis. Vivamus facilisis ligula id fringilla gravida.</p>
+                </div>
+                <div class="card hidden-animation">
+                    <img src="./img/skills-icons/js-logo.svg" alt="" class="card__logo">
+                    <h4>JavaScript</h4>
                     <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit
                         amet
                         vestibulum felis. Vivamus facilisis ligula id fringilla gravida.</p>
@@ -168,7 +138,7 @@
         <div id="portfolio">
             <h2>Portfolio</h2>
             <div class="cards">
-                <div class="card">
+                <div class="card hidden-animation">
                     <img src="./img/portfolio-item-picture.png" alt="">
                     <h4>Project Names</h4>
                     <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit
@@ -180,7 +150,7 @@
                         <span class="portfolio__tag">JS</span>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card hidden-animation">
                     <img src="./img/portfolio-item-picture.png" alt="">
                     <h4>Project Names</h4>
                     <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit
@@ -192,9 +162,7 @@
                         <span class="portfolio__tag">JS</span>
                     </div>
                 </div>
-            </div>
-            <div class="cards">
-                <div class="card">
+                <div class="card hidden-animation">
                     <img src="./img/portfolio-item-picture.png" alt="">
                     <h4>Project Names</h4>
                     <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit
@@ -206,7 +174,7 @@
                         <span class="portfolio__tag">JS</span>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card hidden-animation">
                     <img src="./img/portfolio-item-picture.png" alt="">
                     <h4>Project Names</h4>
                     <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit
@@ -222,9 +190,7 @@
         </div>
         <div id="contact">
             <h2>Contact</h2>
-            <p class="contact__status">I am currently seeking employment, so if you have a job or project offer, or if
-                you need more
-                information, please do not hesitate to contact me.</p>
+            <p class="contact__status">If you want to make a project, you can easily communicate with me. :)</p>
             <a href="mailto:vkarchevskyi10@gmail.com" class="button">Write Message</a>
             <div class="links">
                 <a href="https://github.com/vkarchevskyi/"><img src="./img/github-icon.png" alt="Github"></a>
